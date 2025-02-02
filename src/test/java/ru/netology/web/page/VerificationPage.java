@@ -1,15 +1,15 @@
-package page;
+package ru.netology.web.page;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import data.DataHelper;
+import ru.netology.web.data.DataHelper;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class VerificationPage {
-    private SelenideElement codeFiled = $("[data-test-id='code'] input");
-    private SelenideElement verifyButton = $("[data-test-id='action-verify']");
-    private SelenideElement errorMsg = $("[data-test-id='error-notification'] .notification__content");
+    private SelenideElement codeFiled = $("[ru.netology.web.data-ru.netology.web.test-id='code'] input");
+    private SelenideElement verifyButton = $("[ru.netology.web.data-ru.netology.web.test-id='action-verify']");
+    private SelenideElement errorMsg = $("[ru.netology.web.data-ru.netology.web.test-id='error-notification'] .notification__content");
 
     public VerificationPage() {
         codeFiled.shouldBe(Condition.visible);

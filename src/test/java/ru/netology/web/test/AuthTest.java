@@ -1,11 +1,10 @@
-package test;
+package ru.netology.web.test;
 
 import com.codeborne.selenide.Selenide;
-import data.DataHelper;
-import org.junit.jupiter.api.AfterEach;
+import ru.netology.web.data.DataHelper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import page.LoginPage;
+import ru.netology.web.page.LoginPage;
 
 public class AuthTest {
     private DataHelper.AuthInfo authInfo;
